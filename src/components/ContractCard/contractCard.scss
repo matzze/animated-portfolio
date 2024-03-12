@@ -1,31 +1,3 @@
-.tirHeader {
-  display: flex;
-}
-
-.h1Tir {
-  padding-top: 40px;
-  margin-left: 40px;
-  font-size: 50px;
-}
-
-.h1Choose {
-  padding-top: 40px;
-  margin-left: 450px;
-  font-size: 50px;
-}
-
-.InfoContainer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.Contracts {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
 .contractcard-container {
   width: 250px; /* Breite der Karte */
   height: 320px; /* Höhe der Karte */
@@ -39,6 +11,7 @@
   transform-style: preserve-3d;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop Shadow */
+  position: relative; /* Positionierung relativ für die Kinder-Elemente */
 }
 
 .contractcard-container .contractcard:hover {
@@ -64,18 +37,27 @@
 }
 
 .contractcard-container .contractcard .contractcard__face--front {
-  background-color: #d4222a; /* Hintergrundfarbe für die Vorderseite */
+  z-index: 2; /* Vorderseite über Rückseite */
+}
+
+.contractcard-container .contractcard .contractcard__face--back {
+  z-index: 1; /* Rückseite unter Vorderseite */
+  transform: rotateY(180deg);
+  background-color: #d4222a; /* Hintergrundfarbe für die Rückseite */
+}
+
+.contractcard-container .contractcard .contractcard__face--front .h2Months {
+  position: absolute; /* Positionierung absolut innerhalb der Vorderseite */
+  top: 20px; /* Abstand von oben */
+  left: 20px; /* Abstand von links */
+  color: #d4222a; /* Farbe des Textes in Rot setzen */
 }
 
 .contractcard-container .contractcard .contractcard__face--front img {
   width: 100%; /* Bildbreite auf 100% des Elternelements setzen */
   height: 100%; /* Bildhöhe auf 100% des Elternelements setzen */
   object-fit: cover; /* Das Bild wird proportioniert, um den gesamten Bereich zu füllen */
-}
-
-.contractcard-container .contractcard .contractcard__face--back {
-  transform: rotateY(180deg);
-  background-color: #d4222a; /* Hintergrundfarbe für die Rückseite */
+  border-radius: 10px; /* Abgerundete Ecken wie bei der Karte */
 }
 
 .contractcard-container .contractcard .contractcard__face--back ul {

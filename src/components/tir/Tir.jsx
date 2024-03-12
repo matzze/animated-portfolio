@@ -7,20 +7,20 @@ import IntroductionSVG from "../../svgs/introduction";
 import ShowerSVG from "../../svgs/shower";
 import CardioSvg from "../../svgs/cardio";
 import tirMapImage from "../../../images/tirmap1.png";
-import studioImage from "../../../images/tir.jpg";
+import studioImage from "../../../images/74Overview.jpg";
 
 const Tir = () => {
   return (
     <div>
       <div className="tirHeader">
         <h1 className="h1Tir">Tirschenreuth</h1>
-        <h1 className="h1Choose">Wähle deinen Vertrag!</h1>
+        <h1 className="h1Choose">Wähle deine Laufzeit!</h1>
       </div>
 
       <div className="Contracts">
-        <ContractCard title="Barzahler" image={studioImage} />
-        <ContractCard title="Kontoabbucher" />
-        <ContractCard title="Monatsvertrag" />
+        <ContractCard title="16 Monate" image={studioImage} />
+        <ContractCard title="12 Monate" />
+        <ContractCard title="1 Monat" />
         <ContractCard title="10er-Karte" />
       </div>
 
@@ -53,7 +53,7 @@ const Tir = () => {
           </div>
         </div>
         <div className="InfoItem">
-          <h2>Google Maps</h2>
+          <h2>Hier findest du uns</h2>
           <img src={tirMapImage} alt="Tirschenreuth Map" />
         </div>
         <div className="InfoVideo">

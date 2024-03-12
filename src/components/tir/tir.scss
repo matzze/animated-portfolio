@@ -14,6 +14,19 @@
   font-size: 50px;
 }
 
+.InfoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.Contracts {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
 .InfoVideo video {
   width: 300px;
   height: 480px;
@@ -25,12 +38,12 @@
 .InfoItem {
   margin-bottom: 20px;
 }
+
 .InfoItem img {
   max-width: 400px; /* Das Bild wird auf die maximale Breite des Containers beschränkt */
   height: 400px; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
   border-radius: 10px; /* Abgerundete Ecken für das Bild */
 }
-
 
 .icon-with-text {
   display: flex;

@@ -15,7 +15,7 @@ const ContractCard = ({ title, image }) => {
         onClick={handleClick}
       >
         <div className="contractcard__face contractcard__face--front">
-          <h2>{title}</h2>
+          <h2 className="h2Months">{title}</h2>
           {image && <img src={image} alt={title} />}{" "}
         </div>
         <div className="contractcard__face contractcard__face--back">

@@ -13,7 +13,7 @@ const App = () => {
       </section>
 
       <section>
-        <Tir className="container" />
+        <Tir />
       </section>
 
       <section>Wasa</section>
