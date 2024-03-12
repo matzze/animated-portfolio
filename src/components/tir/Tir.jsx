@@ -7,7 +7,10 @@ import IntroductionSVG from "../../svgs/introduction";
 import ShowerSVG from "../../svgs/shower";
 import CardioSvg from "../../svgs/cardio";
 import tirMapImage from "../../../images/tirmap1.png";
-import studioImage from "../../../images/74Overview.jpg";
+import hantelnImage from "../../../images/hanteln.jpg";
+import monatImage from "../../../images/1monat.jpg";
+import tenImage from "../../../images/10er.jpg";
+import twelveImage from "../../../images/12monate.jpg";
 
 const Tir = () => {
   return (
@@ -18,19 +21,21 @@ const Tir = () => {
       </div>
 
       <div className="Contracts">
-        <ContractCard title="16 Monate" image={studioImage} />
-        <ContractCard title="12 Monate" />
-        <ContractCard title="1 Monat" />
-        <ContractCard title="10er-Karte" />
+        <ContractCard title="16 Monate" image={hantelnImage} />
+        <ContractCard title="12 Monate" image={twelveImage} />
+        <ContractCard title="1 Monat" image={monatImage} />
+        <ContractCard title="10er-Karte" image={tenImage} />
       </div>
 
       <div className="InfoContainer">
         <div className="InfoItem">
-          <h2>Öffnungszeiten</h2>
-          <p>Geöffnet von Montag bis Freitag von 7 Uhr bis 22 Uhr</p>
+          <h2 className="InfoHeader">Öffnungszeiten</h2>
+
+          <p className="opening-hours-info">Montag bis Freitag </p>
+          <p className="opening-hours-info">7 Uhr - 22 Uhr</p>
         </div>
         <div className="InfoItem">
-          <h2>Vorteile</h2>
+          <h2 className="InfoHeader">Vorteile</h2>
           <div className="icon-with-text">
             <IntroductionSVG className="svg-icon" />
             <span>Einführung</span>
@@ -47,13 +52,9 @@ const Tir = () => {
             <DrinkSVG className="svg-icon" />
             <span>Trinken</span>
           </div>
-          <div className="icon-with-text">
-            <TwentyFourHoursIcon className="svg-icon" />
-            <span>24 Stunden</span>
-          </div>
         </div>
         <div className="InfoItem">
-          <h2>Hier findest du uns</h2>
+          <h2 className="InfoHeader">Hier findest du uns</h2>
           <img src={tirMapImage} alt="Tirschenreuth Map" />
         </div>
         <div className="InfoVideo">

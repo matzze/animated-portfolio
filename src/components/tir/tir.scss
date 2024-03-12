@@ -22,6 +22,7 @@
 
 .Contracts {
   display: flex;
+  
   justify-content: center;
   margin-top: 20px;
 }
@@ -58,4 +59,20 @@
 
 .icon-with-text span {
   margin-left: 10px; /* Abstand zwischen Icon und Text */
+}
+
+.InfoHeader {
+  font-size: 30px; /* Größe der Überschriften */
+  font-weight: bold; /* Fettformatierung der Überschriften */
+  margin-bottom: 20px; /* Abstand unter den Überschriften */
+  margin-left: 30px;
+}
+
+.InfoItem.opening-hours {
+  padding-left: 30px; /* Zusätzlicher Abstand von der linken Seite */
+}
+.opening-hours-info {
+  margin-left: 30px; /* Abstand von links für die p-Tags der Öffnungszeiten */
+  padding: 10px;
+  font-size: 30px;
 }
