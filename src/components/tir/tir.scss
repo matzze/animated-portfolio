@@ -1,0 +1,48 @@
+.tirHeader {
+  display: flex;
+}
+
+.h1Tir {
+  padding-top: 40px;
+  margin-left: 40px;
+  font-size: 50px;
+}
+
+.h1Choose {
+  padding-top: 40px;
+  margin-left: 450px;
+  font-size: 50px;
+}
+
+.InfoVideo video {
+  width: 300px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.InfoItem {
+  margin-bottom: 20px;
+}
+.InfoItem img {
+  max-width: 400px; /* Das Bild wird auf die maximale Breite des Containers beschränkt */
+  height: 400px; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
+  border-radius: 10px; /* Abgerundete Ecken für das Bild */
+}
+
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Abstand zwischen den Icon-Text-Paaren */
+}
+
+.icon-with-text svg {
+  width: 64px; /* Kleinere Größe für die Icons */
+  height: 64px; /* Kleinere Größe für die Icons */
+}
+
+.icon-with-text span {
+  margin-left: 10px; /* Abstand zwischen Icon und Text */
+}

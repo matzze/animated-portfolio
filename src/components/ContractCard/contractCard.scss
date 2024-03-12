@@ -1,0 +1,90 @@
+.tirHeader {
+  display: flex;
+}
+
+.h1Tir {
+  padding-top: 40px;
+  margin-left: 40px;
+  font-size: 50px;
+}
+
+.h1Choose {
+  padding-top: 40px;
+  margin-left: 450px;
+  font-size: 50px;
+}
+
+.InfoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.Contracts {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contractcard-container {
+  width: 250px; /* Breite der Karte */
+  height: 320px; /* Höhe der Karte */
+  margin-right: 20px; /* Abstand zwischen den Karten */
+}
+
+.contractcard-container .contractcard {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop Shadow */
+}
+
+.contractcard-container .contractcard:hover {
+  transform: scale(1.1) rotateY(0deg); /* Karte vergrößern beim Hover */
+}
+
+.contractcard-container .contractcard.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.contractcard-container .contractcard .contractcard__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  color: #000; /* Schwarzer Text */
+  display: flex;
+  flex-direction: column; /* Stacked items */
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Größere Schriftgröße */
+}
+
+.contractcard-container .contractcard .contractcard__face--front {
+  background-color: #d4222a; /* Hintergrundfarbe für die Vorderseite */
+}
+
+.contractcard-container .contractcard .contractcard__face--front img {
+  width: 100%; /* Bildbreite auf 100% des Elternelements setzen */
+  height: 100%; /* Bildhöhe auf 100% des Elternelements setzen */
+  object-fit: cover; /* Das Bild wird proportioniert, um den gesamten Bereich zu füllen */
+}
+
+.contractcard-container .contractcard .contractcard__face--back {
+  transform: rotateY(180deg);
+  background-color: #d4222a; /* Hintergrundfarbe für die Rückseite */
+}
+
+.contractcard-container .contractcard .contractcard__face--back ul {
+  padding: 0;
+  margin-top: 20px; /* Abstand zwischen Preis und Stichpunkten */
+}
+
+.contractcard-container .contractcard .contractcard__face--back ul li {
+  list-style-type: disc; /* Aufzählungspunkte */
+  margin-left: 20px; /* Einrückung der Stichpunkte */
+  margin-bottom: 10px;
+}

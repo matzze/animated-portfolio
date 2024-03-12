@@ -1,0 +1,63 @@
+.hero {
+  height: calc(100vh - 100px);
+  background:linear-gradient(180deg,#333333,#9d9f9f) ;
+
+  .ImageContainer {
+    display: flex;
+    margin-left: 10%;
+  }
+
+  .logoImg {
+    width: 500px;
+    z-index: 1;
+    
+  }
+
+  .H1Container {
+    display: flex;
+    justify-content: center;
+    
+
+    .h1 {
+      font-size: 60px;
+      z-index: 1;
+    }
+  }
+    .image-card {
+      display: flex;
+      justify-content: center;
+      
+      > * {
+        margin-right: 50px;
+      }
+  }
+  .badges
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    z-index: 1;
+  }
+
+
+  .technoGym
+  {
+    width: 150px;
+    height: 50px;
+   
+   
+  }
+  .reha
+  {
+    width: 100px;
+    height: 120px;
+   
+    
+  }
+  .twentyfour
+  {    width: 120px;
+    height: 120px;
+
+  }
+
+}
