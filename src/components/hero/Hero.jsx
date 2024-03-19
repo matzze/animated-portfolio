@@ -17,7 +17,7 @@ const Hero = () => {
         <ImageCard
           src="./images/tir.jpg"
           title="Tirschenreuth"
-          description="Bestes Fitnessstudio im ganzen Landkreis"
+          description="Beispieltext"
         />
 
         <ImageCard

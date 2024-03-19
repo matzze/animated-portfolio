@@ -15,7 +15,6 @@
   text-align: center; /* Text zentrieren */
   text-shadow: 2px 2px 6px rgba(63, 58, 58, 0.5); /* Dropshadow */
   z-index: 1; /* Über dem Bild */
- 
 }
 
 .contractcard-container .contractcard .contractcard__face--front .h2Months span {
@@ -66,10 +65,23 @@
   z-index: 2; /* Vorderseite über Rückseite */
 }
 
+.contractcard-container .contractcard .contractcard__face--back h2 {
+  margin-bottom: 10px; /* Abstand nach unten für den Preis */
+  font-size: 44px; /* Kleinere Schriftgröße für den Preis */
+  color: #fff; /* Weiße Textfarbe */
+}
+
+.contractcard-container .contractcard .contractcard__face--back p {
+  margin-left: 15px; /* Null margin für Absätze */
+  font-size: 18px; /* Kleinere Schriftgröße für die Details */
+  color: #fff; /* Weiße Textfarbe */
+}
+
 .contractcard-container .contractcard .contractcard__face--back {
   z-index: 1; /* Rückseite unter Vorderseite */
   transform: rotateY(180deg);
-  background-color: #d4222a; /* Hintergrundfarbe für die Rückseite */
+  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe für die Rückseite */
+  
 }
 
 .contractcard-container .contractcard .contractcard__face--front img {
@@ -79,15 +91,4 @@
   border-radius: 10px; /* Abgerundete Ecken wie bei der Karte */
   opacity: 0.6; /* Opazität des Bildes auf 0.7 setzen */
   filter: blur(0.8px);
-}
-
-.contractcard-container .contractcard .contractcard__face--back ul {
-  padding: 0;
-  margin-top: 20px; /* Abstand zwischen Preis und Stichpunkten */
-}
-
-.contractcard-container .contractcard .contractcard__face--back ul li {
-  list-style-type: disc; /* Aufzählungspunkte */
-  margin-left: 20px; /* Einrückung der Stichpunkte */
-  margin-bottom: 10px;
 }

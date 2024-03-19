@@ -11,6 +11,8 @@ import hantelnImage from "../../../images/hanteln.jpg";
 import monatImage from "../../../images/1monat.jpg";
 import tenImage from "../../../images/10er.jpg";
 import twelveImage from "../../../images/12monate.jpg";
+import kursequerImage from "../../../images/kursequer.jpg";
+import Course from "../../Course/course";
 
 const Tir = () => {
   return (
@@ -33,24 +35,25 @@ const Tir = () => {
 
           <p className="opening-hours-info">Montag bis Freitag </p>
           <p className="opening-hours-info">7 Uhr - 22 Uhr</p>
-        </div>
+          <Course title="Aktuelle Kurse" image={kursequerImage} />
+        </div>{" "}
         <div className="InfoItem">
-          <h2 className="InfoHeader">Vorteile</h2>
+          <h2 className="InfoHeader">Deine Vorteile</h2>
           <div className="icon-with-text">
             <IntroductionSVG className="svg-icon" />
-            <span>Einführung</span>
+            <span>Gratis Einführung</span>
           </div>
           <div className="icon-with-text">
             <ShowerSVG className="svg-icon" />
-            <span>Dusche</span>
+            <span>Duschen</span>
           </div>
           <div className="icon-with-text">
             <CardioSvg className="svg-icon" />
-            <span>Cardio</span>
+            <span>Top Cardiogeräte</span>
           </div>
           <div className="icon-with-text">
             <DrinkSVG className="svg-icon" />
-            <span>Trinken</span>
+            <span>Mineralgetränke</span>
           </div>
         </div>
         <div className="InfoItem">
