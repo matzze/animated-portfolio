@@ -20,9 +20,9 @@ const ContractCard = ({ title, image }) => {
         </div>
         <div className="contractcard__face contractcard__face--back">
           <h2>19,90€*</h2>
-          <p>- Einmalig 40€ Chipaktivierung</p>
+          <p> &nbsp;• Einmalig 40€ Chipaktivierung</p>
           <br />
-          <p>- Jährlich Servicepauschale von 39,95€</p> <br />
+          <p> &nbsp;• Jährlich Servicepauschale von 39,95€</p> <br />
           <p>*Bei Vorab Barzahlung </p>
         </div>
       </div>

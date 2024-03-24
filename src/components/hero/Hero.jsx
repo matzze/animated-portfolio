@@ -15,18 +15,18 @@ const Hero = () => {
 
       <div className="image-card">
         <ImageCard
-          src="./images/tir.jpg"
+          src="./images/typ.jpg"
           title="Tirschenreuth"
           description="Beispieltext"
         />
 
         <ImageCard
-          src="./images/wasa.jpg"
+          src="./images/girljpg.jpg"
           title="Waldsassen"
           description="Bestes Fitnessstudio im ganzen Landkreis"
         />
         <ImageCard
-          src="./images/hanteln.jpg"
+          src="./images/muscular.jpg"
           title="Studio NEU"
           description="Bestes neues Studio"
         />

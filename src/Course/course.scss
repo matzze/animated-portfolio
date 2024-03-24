@@ -1,8 +1,9 @@
 .course-container {
-  width: 420px; /* Breite der Karte */
-  height: 220px; /* Höhe der Karte */
+  width: 250px; /* Breite der Karte */
+  height: 320px; /* Höhe der Karte */
   margin-bottom: 20px; /* Abstand zwischen den Karten */
   margin-left: 30px;
+  
 }
 
 .course-card {
@@ -30,4 +31,5 @@
   height: 100%; /* Vollständige Höhe verwenden */
   object-fit: cover; /* Das Bild wird proportioniert, um den gesamten Bereich zu füllen */
   border: none; /* Kein Rahmen */
+  opacity: 0.6;
 }

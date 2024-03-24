@@ -26,6 +26,7 @@
   flex-wrap: wrap; /* Zeilenumbruch bei Bedarf */
   justify-content: center;
   margin-top: 20px;
+  
 }
 
 .contractcard-container .contractcard {
@@ -35,7 +36,7 @@
   transition: transform 0.8s;
   transform-style: preserve-3d;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop Shadow */
+  box-shadow: 2px 2px 4px rgba(70, 65, 65, 0.966); /* Drop Shadow */
   position: relative; /* Positionierung relativ für die Kinder-Elemente */
 }
 
