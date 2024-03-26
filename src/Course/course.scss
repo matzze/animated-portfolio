@@ -1,35 +1,109 @@
-.course-container {
+.coursecard-container {
   width: 250px; /* Breite der Karte */
   height: 320px; /* Höhe der Karte */
-  margin-bottom: 20px; /* Abstand zwischen den Karten */
-  margin-left: 30px;
-  
+  margin-right: 20px; /* Abstand zwischen den Karten */
+  position: relative; /* Positionierung relativ für die Kinder-Elemente */
 }
 
-.course-card {
-  width: 100%; /* Vollständige Breite verwenden */
-  height: 100%; /* Vollständige Höhe verwenden */
-  border-radius: 10px; /* Abgerundete Ecken */
-  overflow: hidden; /* Überlauf ausblenden */
-  position: relative; /* Position relativ für den Titel */
-}
-
-.course-title {
-  font-size: 36px; /* Schriftgröße des Titels erhöht */
-  color: #ffffff; /* Weiße Textfarbe */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); /* Textschatten */
-  position: absolute; /* Position absolut */
-  top: 50%; /* Zentriert vertikal */
-  left: 50%; /* Zentriert horizontal */
-  transform: translate(-50%, -50%); /* Zentriert horizontal und vertikal */
-  white-space: nowrap; /* Kein Zeilenumbruch */
+.coursecard-container .coursecard .coursecard__face--front .h2Months {
+  position: absolute; /* Positionierung absolut innerhalb der Vorderseite */
+  top: 50%; /* Vertikal zentrieren */
+  left: 0; /* Links ausrichten */
+  right: 0; /* Rechts ausrichten */
+  transform: translateY(-50%); /* Vertikal zentrieren */
+  color: rgb(255, 255, 255); /* Weiße Textfarbe */
+  text-align: center; /* Text zentrieren */
+  text-shadow: 2px 2px 6px rgba(63, 58, 58, 0.5); /* Dropshadow */
   z-index: 1; /* Über dem Bild */
 }
 
-.course-image {
-  width: 100%; /* Vollständige Breite verwenden */
-  height: 100%; /* Vollständige Höhe verwenden */
+.coursecard-container .coursecard .coursecard__face--front .h2Months span {
+  display: block; /* Als Blockelement behandeln */
+}
+
+.Courses {
+  display: flex;
+  flex-wrap: wrap; /* Zeilenumbruch bei Bedarf */
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.coursecard-container .coursecard {
+  width: 250px; /* Breite der Karte */
+  height: 320px; /* Höhe der Karte */
+  margin-right: 20px; /* Abstand zwischen den Karten */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(70, 65, 65, 0.966); /* Drop Shadow */
+  position: relative; /* Positionierung relativ für die Kinder-Elemente */
+}
+
+.coursecard-container .coursecard:hover {
+  transform: scale(1.1) rotateY(0deg); /* Karte vergrößern beim Hover */
+}
+
+.coursecard-container .coursecard.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.coursecard-container .coursecard .coursecard__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  color: #000; /* Schwarzer Text */
+  display: flex;
+  flex-direction: column; /* Stacked items */
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Größere Schriftgröße */
+}
+
+.coursecard-container .coursecard .coursecard__face--front {
+  z-index: 2; /* Vorderseite über Rückseite */
+}
+
+.coursecard-container .coursecard .coursecard__face--back h2 {
+  margin-bottom: 10px; /* Abstand nach unten für den Preis */
+  font-size: 44px; /* Kleinere Schriftgröße für den Preis */
+  color: #fff; /* Weiße Textfarbe */
+}
+
+.coursecard-container .coursecard .coursecard__face--back p {
+  margin-left: 15px; /* Null margin für Absätze */
+  font-size: 18px; /* Kleinere Schriftgröße für die Details */
+  color: #fff; /* Weiße Textfarbe */
+}
+
+.coursecard-container .coursecard .coursecard__face--back {
+  z-index: 1; /* Rückseite unter Vorderseite */
+  transform: rotateY(180deg);
+  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe für die Rückseite */
+  
+}
+
+.coursecard-container .coursecard .coursecard__face--front img {
+  width: 100%; /* Bildbreite auf 100% des Elternelements setzen */
+  height: 100%; /* Bildhöhe auf 100% des Elternelements setzen */
   object-fit: cover; /* Das Bild wird proportioniert, um den gesamten Bereich zu füllen */
-  border: none; /* Kein Rahmen */
-  opacity: 0.6;
+  border-radius: 10px; /* Abgerundete Ecken wie bei der Karte */
+  opacity: 0.6; /* Opazität des Bildes auf 0.7 setzen */
+  filter: blur(0.8px);
+}
+.coursecard-container .coursecard .coursecard__face--back .qr-code-small {
+  width: 150px; /* Breite des QR-Codes anpassen */
+  height: 150px; /* Höhe des QR-Codes anpassen */
+  margin-top: 20px;
+
+}
+.coursecard-container .coursecard .coursecard__face--back {
+  z-index: 1; /* Rückseite unter Vorderseite */
+  transform: rotateY(180deg);
+  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe für die Rückseite */
+  color: white; /* Textfarbe auf Weiß setzen */
+  text-align: center; /* Text zentrieren */
+  font-size: medium;
 }

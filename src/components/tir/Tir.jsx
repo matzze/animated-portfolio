@@ -13,17 +13,15 @@ import tenImage from "../../../images/10er.jpg";
 import twelveImage from "../../../images/12monate.jpg";
 import kursequerImage from "../../../images/kurse.jpg";
 import bodytirImage from "../../../images/bodytir.png";
-import qrKurse from "../../../images/qr.png";
+import qrKurse from "../../../images/qr.png"; // Hinzugefügtes QR-Code-Bild
 import Course from "../../Course/course";
 
 const Tir = () => {
   return (
     <div className="tirBackground">
-      {" "}
-      {/* Füge die Klasse 'tirBackground' hinzu */}
       <div className="tirHeader">
-        <img src={bodytirImage} alt="Bodytir" />{" "}
-        {/* Hinzufügen des neuen Bildes */}
+        <img src={bodytirImage} alt="Bodytir" className="map-image" />
+
         <h1 className="h1Choose">Wähle deine Laufzeit!</h1>
       </div>
       <div className="Contracts">
@@ -31,7 +29,8 @@ const Tir = () => {
         <ContractCard title="12 Monate" image={twelveImage} />
         <ContractCard title="1 Monat" image={monatImage} />
         <ContractCard title="10er-Karte" image={tenImage} />
-        <Course title="Kurse" image={kursequerImage} />
+        <Course title="Kurse" image={kursequerImage} qrCode={qrKurse} />{" "}
+        {/* QR-Code-Bild hinzugefügt */}
       </div>
       <div className="InfoContainer">
         <div className="InfoItem">
@@ -48,7 +47,7 @@ const Tir = () => {
           <p className="opening-hours-info">
             Freitag <strong>9- 12 Uhr</strong>
           </p>
-        </div>{" "}
+        </div>
         <div className="InfoItem">
           <h2 className="InfoHeader">Deine Vorteile</h2>
           <div className="icon-container">
@@ -74,15 +73,6 @@ const Tir = () => {
           <h2 className="InfoHeader">Hier findest du uns</h2>
           <img src={tirMapImage} alt="Tirschenreuth Map" />
         </div>
-        {/* <div className="InfoVideo">
-          <video
-            src="../videos/GymBodyStyle.MP4"
-            muted
-            autoPlay={"autoplay"}
-            preLoad="auto"
-            loop
-          ></video>
-        </div> */}
       </div>
     </div>
   );

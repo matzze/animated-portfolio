@@ -194,3 +194,22 @@
   padding: 10px;
   font-size: 30px;
 }
+.map-hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.map-image {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+

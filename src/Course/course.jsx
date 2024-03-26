@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import "./course.scss";
 
-const Course = ({ title, image }) => {
+const Course = ({ title, image, qrCode }) => {
   const [flipped, setFlipped] = useState(false);
 
-  const handleCardClick = () => {
-    setFlipped(!flipped); // Umkehrung des flipped-Zustands
+  const handleClick = () => {
+    setFlipped(!flipped);
   };
 
   return (
-    <div
-      className={`course-container ${flipped ? "flipped" : ""}`}
-      onClick={handleCardClick}
-    >
-      <div className="course-card">
-        <div className="front">
-          <h2 className="course-title">{title}</h2>
-          {image && <img src={image} alt={title} className="course-image" />}
+    <div className="coursecard-container">
+      <div
+        className={`coursecard ${flipped ? "is-flipped" : ""}`}
+        onClick={handleClick}
+      >
+        <div className="coursecard__face coursecard__face--front">
+          <h2 className="h2Months">{title}</h2>
+          {image && <img src={image} alt={title} />}{" "}
         </div>
-        <div className="back">
-          {/* Rückseiteninhalt hier einfügen */}
-          <p>Hier könnte die Rückseite der Karte sein.</p>
+        <div className="coursecard__face coursecard__face--back">
+          <h3 className="back-title">
+            Alle Infos findest du in der Whatsappgruppe
+          </h3>
+          <img src={qrCode} alt="QR Code" className="qr-code-small" />
         </div>
       </div>
     </div>
