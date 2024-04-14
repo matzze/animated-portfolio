@@ -20,15 +20,42 @@ const Tir = () => {
   return (
     <div className="tirBackground">
       <div className="tirHeader">
-        <img src={bodytirImage} alt="Bodytir" className="map-image" />
-
+        <img src={bodytirImage} alt="Bodytir" className="" />
         <h1 className="h1Choose">Wähle deine Laufzeit!</h1>
       </div>
       <div className="Contracts">
-        <ContractCard title="15 Monate" image={hantelnImage} />
-        <ContractCard title="12 Monate" image={twelveImage} />
-        <ContractCard title="1 Monat" image={monatImage} />
-        <ContractCard title="10er-Karte" image={tenImage} />
+        <ContractCard
+          title="15 Monate"
+          image={hantelnImage}
+          price="19,90€*"
+          activationFee="• Einmalig 20€ Chipaktivierung"
+          serviceFee="• Jährlich Servicepauschale von 39,95€"
+          note="*Bei Vorab Barzahlung"
+        />
+        <ContractCard
+          title="12 Monate"
+          image={twelveImage}
+          price="24,90€*"
+          activationFee="• Einmalig 20€ Chipaktivierung"
+          serviceFee="• Jährlich Servicepauschale von 39,95€"
+          note="*Bei Kontoabbuchung"
+        />
+        <ContractCard
+          title="1 Monat"
+          image={monatImage}
+          price="44,90€*"
+          activationFee="• Einmalig 20€ Chipaktivierung"
+          serviceFee=" "
+          note=""
+        />
+        <ContractCard
+          title="10er- Karte"
+          image={tenImage}
+          price="85€*"
+          activationFee="• Einmalig 40€ Chipaktivierung"
+          serviceFee=""
+          note=""
+        />
         <Course title="Kurse" image={kursequerImage} qrCode={qrKurse} />{" "}
         {/* QR-Code-Bild hinzugefügt */}
       </div>
@@ -71,7 +98,17 @@ const Tir = () => {
         </div>
         <div className="InfoItem">
           <h2 className="InfoHeader">Hier findest du uns</h2>
-          <img src={tirMapImage} alt="Tirschenreuth Map" />
+          <a
+            href="https://www.google.com/maps/dir//Maximilianpl.+28,+95643+Tirschenreuth/@49.8771808,12.2542397,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47a05ce772fd328b:0x9c704d0d3de2c84f!2m2!1d12.33664!2d49.87721?entry=ttu"
+            target="_blank" // Öffnet den Link in einem neuen Tab
+            rel="noopener noreferrer" // Empfohlen für Sicherheit und Barrierefreiheit
+          >
+            <img
+              src={tirMapImage}
+              alt="Tirschenreuth Map"
+              className="map-image"
+            />
+          </a>
         </div>
       </div>
     </div>

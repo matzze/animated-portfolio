@@ -8,10 +8,12 @@ const ImageCard = ({ src, title, description }) => {
       <div className="card-content">
         <h2>{title}</h2>
         <p>{description}</p>
-        <a href="#" className="button">
-          Klicke für mehr Infos
-          <span className="material-symbols-outlined"></span>
-        </a>
+        {title !== "Studio NEU" && ( // Bedingte Anweisung: Überprüfen, ob der Titel nicht "Studio NEU" ist
+          <a href="#" className="button">
+            Klicke für mehr Infos
+            <span className="material-symbols-outlined"></span>
+          </a>
+        )}
       </div>
     </div>
   );

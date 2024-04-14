@@ -1,0 +1,46 @@
+.studios-outer-container {
+  padding: 20px; /* Abstand zu den Rändern */
+  background: linear-gradient(to bottom right, rgba(94, 35, 38, 0.3), rgba(51, 51, 51, 1)); /* Farbverlauf von Grau zu Rot */
+  position: relative; /* Positionierung für das Z-Index-Management */
+  z-index: 0; /* Standard-Z-Index, damit sich andere Elemente darüber befinden */
+}
+
+.studios-inner-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 30%; /* Breite der Spalten */
+  margin-top: 20px; /* Abstand nach oben */
+  text-align: center; /* Text zentrieren */
+}
+
+.column img,
+.column video {
+  width: 100%; /* Bild oder Video auf volle Breite der Spalte */
+  height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
+  margin-bottom: 30px; /* Mehr Abstand zwischen Bild/Video und Text */
+  border-radius: 10px; /* Abgerundete Ecken */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Dropshadow */
+}
+
+.column video {
+  width: 70%; /* Breite des Videos auf 80% der Spalte */
+  height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
+}
+
+.column h2 {
+  margin-top: 10px; /* Abstand zwischen Überschrift und Inhalt */
+  margin-bottom: 20px; /* Mehr Abstand zwischen Überschrift und Text */
+  font-size: 30px; /* Größe der Überschriften */
+  font-weight: bold; /* Fettformatierung der Überschriften */
+  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe der roten Box */
+  color: white; /* Textfarbe auf weiß setzen, um den Kontrast zu verbessern */
+  padding: 10px 20px; /* Innenabstand für den Text */
+  border-radius: 5px; /* Abgerundete Ecken für die rote Box */
+}
+
+.column p {
+  margin-bottom: 30px; /* Mehr Abstand zwischen Text und Bild/Video */
+}

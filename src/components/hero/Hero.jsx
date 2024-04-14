@@ -17,18 +17,18 @@ const Hero = () => {
         <ImageCard
           src="./images/typ.jpg"
           title="Tirschenreuth"
-          description="Beispieltext"
+          description="Zertifiziertes Rehasport Studio"
         />
 
         <ImageCard
           src="./images/girljpg.jpg"
           title="Waldsassen"
-          description="Bestes Fitnessstudio im ganzen Landkreis"
+          description="Studio mit Outdoor-Bereich"
         />
         <ImageCard
           src="./images/muscular.jpg"
           title="Studio NEU"
-          description="Bestes neues Studio"
+          description="Coming soon!"
         />
       </div>
     </div>

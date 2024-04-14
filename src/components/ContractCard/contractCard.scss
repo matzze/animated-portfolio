@@ -26,7 +26,6 @@
   flex-wrap: wrap; /* Zeilenumbruch bei Bedarf */
   justify-content: center;
   margin-top: 20px;
-  
 }
 
 .contractcard-container .contractcard {
@@ -66,6 +65,18 @@
   z-index: 2; /* Vorderseite über Rückseite */
 }
 
+.contractcard-container .contractcard .contractcard__face--back {
+  z-index: 1; /* Rückseite unter Vorderseite */
+  transform: rotateY(180deg);
+  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe für die Rückseite */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Vertikal zentrieren und gleichmäßig verteilen */
+  align-items: center; /* Horizontal zentrieren */
+  padding: 20px; /* Innenabstand hinzufügen */
+  text-align: center; /* Zentrierten Text */
+}
+
 .contractcard-container .contractcard .contractcard__face--back h2 {
   margin-bottom: 10px; /* Abstand nach unten für den Preis */
   font-size: 44px; /* Kleinere Schriftgröße für den Preis */
@@ -73,16 +84,12 @@
 }
 
 .contractcard-container .contractcard .contractcard__face--back p {
-  margin-left: 15px; /* Null margin für Absätze */
   font-size: 18px; /* Kleinere Schriftgröße für die Details */
   color: #fff; /* Weiße Textfarbe */
 }
 
-.contractcard-container .contractcard .contractcard__face--back {
-  z-index: 1; /* Rückseite unter Vorderseite */
-  transform: rotateY(180deg);
-  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe für die Rückseite */
-  
+.contractcard-container .contractcard .contractcard__face--back p:last-child {
+  margin-bottom: 20px; /* Abstand zum unteren Rand */
 }
 
 .contractcard-container .contractcard .contractcard__face--front img {

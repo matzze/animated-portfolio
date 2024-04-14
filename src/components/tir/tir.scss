@@ -205,11 +205,16 @@
   transition: opacity 0.3s ease;
 }
 
+
 .map-image {
   position: relative;
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  cursor: pointer; /* Cursor zum Pointer ändern */
 }
 
+.map-image:hover {
+  opacity: 0.8; /* Ändert die Opazität, wenn über das Bild gehovert wird */
+}
 

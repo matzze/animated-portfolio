@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import "./contractCard.scss";
 
-const ContractCard = ({ title, image }) => {
+const ContractCard = ({
+  title,
+  image,
+  price,
+  activationFee,
+  serviceFee,
+  note,
+}) => {
   const [flipped, setFlipped] = useState(false);
 
   const handleClick = () => {
@@ -19,11 +26,11 @@ const ContractCard = ({ title, image }) => {
           {image && <img src={image} alt={title} />}{" "}
         </div>
         <div className="contractcard__face contractcard__face--back">
-          <h2>19,90€*</h2>
-          <p> &nbsp;• Einmalig 40€ Chipaktivierung</p>
+          <h2>{price}</h2>
+          <p> &nbsp;{activationFee}</p>
           <br />
-          <p> &nbsp;• Jährlich Servicepauschale von 39,95€</p> <br />
-          <p>*Bei Vorab Barzahlung </p>
+          <p> &nbsp; {serviceFee}</p> <br />
+          <p>{note}</p>
         </div>
       </div>
     </div>

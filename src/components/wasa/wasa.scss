@@ -1,0 +1,140 @@
+.wasaBackground {
+    background: linear-gradient(to bottom right, rgba(94, 35, 38, 0.3), rgba(51, 51, 51, 1)); /* Farbverlauf von Grau zu Rot */
+    position: relative; /* Positionierung für das Z-Index-Management */
+    z-index: 0; /* Standard-Z-Index, damit sich andere Elemente darüber befinden */
+  }
+  
+  /* Rest deines CSS-Codes bleibt unverändert */
+  .wasaHeader {
+    display: flex;
+  }
+  
+  .wasaHeader img {
+    width: 220px; /* Breite des Bildes */
+    height: auto; /* Automatische Anpassung der Höhe, um das Seitenverhältnis beizubehalten */
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+  
+  .h1Tir {
+    padding-top: 40px;
+    margin-left: 40px;
+    font-size: 50px;
+  }
+  
+  .h1Choose {
+    padding-top: 40px;
+    font-size: 60px;
+  }
+  
+  .InfoContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  
+  .Contracts {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .InfoVideo video {
+    width: 300px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 30px;
+  }
+  
+  .InfoItem {
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .icon-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Abstand zwischen den Icon-Text-Paaren */
+  }
+  
+  .icon-with-text svg {
+    width: 64px; /* Kleinere Größe für die Icons */
+    height: 64px; /* Kleinere Größe für die Icons */
+  }
+  
+  .icon-with-text span {
+    margin-left: 10px; /* Abstand zwischen Icon und Text */
+  }
+  
+  .InfoHeader {
+    font-size: 30px; /* Größe der Überschriften */
+    font-weight: bold; /* Fettformatierung der Überschriften */
+    margin-bottom: 20px; /* Abstand unter den Überschriften */
+    margin-left: 30px;
+    background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe der roten Box */
+    color: white; /* Textfarbe auf weiß setzen, um den Kontrast zu verbessern */
+    padding: 10px 20px; /* Innenabstand für den Text */
+    border-radius: 5px; /* Abgerundete Ecken für die rote Box */
+  }
+  
+  .InfoItem.opening-hours {
+    padding-left: 30px; /* Zusätzlicher Abstand von der linken Seite */
+  }
+  
+  .opening-hours-info {
+    margin-left: 30px; /* Abstand von links für die p-Tags der Öffnungszeiten */
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .opening-hours-info strong {
+    font-weight: bold; /* Macht den Text innerhalb von <strong> fett */
+  }
+  
+  .opening-hours-info.betreuungszeiten {
+    text-decoration: underline; /* Unterstreicht die Betreuungszeiten */
+  }
+  
+  .map-hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ;
+  }
+  
+  .map-image-wasa {
+    width: auto; /* Automatische Breite basierend auf dem Seitenverhältnis des Bildes */
+    height: 300px; /* Setze die Höhe auf 300px */
+    max-width: 100%; /* Begrenze die maximale Breite auf 100% des Elternelements */
+    margin-left: 30px;
+    transition: opacity 0.3s ; /* Hinzugefügtes Übergangseffekt */
+    cursor: pointer;
+  }
+
+
+.map-image-wasa:hover {
+  opacity: 0.8; /* Ändert die Opazität, wenn über das Bild gehovert wird */
+}
+
+  .InfoItemWasa img {
+    max-width: 300px; /* Das Bild wird auf die maximale Breite von 300px beschränkt */
+    height: 300px; /* Setze die Höhe auf 300px */
+    border-radius: 10px; /* Abgerundete Ecken für das Bild */
+  }
+  
+  
+
+  
+  .map-image:hover {
+    opacity: 0.8; /* Ändert die Opazität, wenn über das Bild gehovert wird */
+  }
+  
