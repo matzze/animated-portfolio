@@ -1,36 +1,43 @@
 import "./newnavbar.scss";
-//import "./navbar.scss"
-import React from "react";
+import React, { useState } from "react";
+import whatsappQR from "../../../images/whatsappQR.png";
 
 const Navbar = () => {
+  const [showQR, setShowQR] = useState(false);
+
+  const openInstagram = () => {
+    window.open(
+      "https://www.instagram.com/body_style_fitness_tir.wasa/?theme=dark",
+      "_blank"
+    );
+  };
+
+  const toggleQR = () => {
+    setShowQR(!showQR);
+  };
+
   return (
     <div className="navbar">
       <img src="" alt="" className="logo"></img>
       <ul>
         <li>Impressum</li>
       </ul>
-      <img src="./images/instaLogo.webp" alt="" className="instaIcon"></img>
-      <img src="./images/whatsapp.png" alt="" className="whatsappIcon"></img>
+      <img
+        src="./images/instaLogo.webp"
+        alt=""
+        className="instaIcon"
+        onClick={openInstagram}
+      ></img>
+
+      <div
+        className={`whatsappContainer ${showQR ? "showQR" : ""}`}
+        onClick={toggleQR}
+      >
+        <img src="./images/whatsapp.png" alt="" className="whatsappIcon"></img>
+        <img src={whatsappQR} alt="" className="whatsappQR"></img>
+      </div>
     </div>
   );
 };
 
 export default Navbar;
-
-/*
-const Navbar = () => {
-  return (
-    <div className="navbar">Navbar
-
-      <div className="wrapper">
-        <span>BodyStyle</span>
-        <div className="social">
-          <a href="#"><img src="./images/instaLogo.webp" alt=""></img></a>
-
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default Navbar*/
