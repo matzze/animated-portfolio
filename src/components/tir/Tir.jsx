@@ -30,7 +30,7 @@ const Tir = () => {
           price="19,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
           serviceFee="• Jährlich Servicepauschale von 39,95€"
-          note="*Bei Vorab Barzahlung"
+          note="*Bei Kontoabbuchung"
         />
         <ContractCard
           title="12 Monate"
@@ -38,7 +38,7 @@ const Tir = () => {
           price="24,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
           serviceFee="• Jährlich Servicepauschale von 39,95€"
-          note="*Bei Kontoabbuchung"
+          note="*Bei Vorab Barzahlung"
         />
         <ContractCard
           title="1 Monat"
@@ -52,7 +52,7 @@ const Tir = () => {
           title="10er- Karte"
           image={tenImage}
           price="85€*"
-          activationFee="• Einmalig 40€ Chipaktivierung"
+          activationFee="• Einmalig 20€ Pfand für Transponder"
           serviceFee=""
           note=""
         />

@@ -27,18 +27,18 @@ const Wasa = () => {
         <ContractCard
           title="15 Monate"
           image={hantelnImage}
-          price="19,90€*"
+          price="29,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
-          serviceFee="• Jährlich Servicepauschale von 39,95€"
-          note="*Bei Vorab Barzahlung"
+          serviceFee="• Jährliche Servicepauschale von 39,95€"
+          note="*Bei monatlicher Kontoabbuchung"
         />
         <ContractCard
           title="12 Monate"
           image={twelveImage}
           price="24,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
-          serviceFee="• Jährlich Servicepauschale von 39,95€"
-          note="*Bei Kontoabbuchung"
+          serviceFee="• Jährliche Servicepauschale von 39,95€"
+          note="*Bei Vorab Barzahlung"
         />
         <ContractCard
           title="1 Monat"
@@ -52,7 +52,7 @@ const Wasa = () => {
           title="10er- Karte"
           image={tenImage}
           price="85€*"
-          activationFee="• Einmalig 40€ Chipaktivierung"
+          activationFee="• Einmalig 20€ Pfand für Transponder"
           serviceFee=""
           note=""
         />
@@ -61,16 +61,16 @@ const Wasa = () => {
         <div className="InfoItem">
           <h2 className="InfoHeader">Öffnungszeiten</h2>
           <p className="opening-hours-info">
-            Montag bis Sonntag <strong>6- 23 Uhr</strong>
+            Montag bis Sonntag <strong>0-24 Uhr</strong>
           </p>
           <p className="opening-hours-info betreuungszeiten">
             Betreuungszeiten
           </p>
           <p className="opening-hours-info">
-            Montag bis Donnerstag <strong>15- 19 Uhr</strong>
+            Montag - Mittwoch- Freitag <strong> </strong>
           </p>
           <p className="opening-hours-info">
-            Freitag <strong>9- 12 Uhr</strong>
+            <strong>ab 15:00 - 19:00 Uhr</strong>
           </p>
         </div>
         <div className="InfoItem">
