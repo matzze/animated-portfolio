@@ -7,10 +7,10 @@ import IntroductionSVG from "../../svgs/introduction";
 import ShowerSVG from "../../svgs/shower";
 import CardioSvg from "../../svgs/cardio";
 import wasaMapImage from "../../../images/bodywasamap.png";
-import hantelnImage from "../../../images/hanteln.jpg";
-import monatImage from "../../../images/1monat.jpg";
-import tenImage from "../../../images/10er.jpg";
-import twelveImage from "../../../images/12monate.jpg";
+import hantelnImage from "../../../images/15wasa.jpg";
+import monatImage from "../../../images/1wasa.jpg";
+import tenImage from "../../../images/10erwasa.jpg";
+import twelveImage from "../../../images/12wasa.jpg";
 import kursequerImage from "../../../images/kurse.jpg";
 import bodywasaImage from "../../../images/bodywasa.png";
 import qrKurse from "../../../images/qr.png"; // Hinzugefügtes QR-Code-Bild
@@ -21,7 +21,7 @@ const Wasa = () => {
     <div className="wasaBackground">
       <div className="wasaHeader">
         <img src={bodywasaImage} alt="Bodytir" className="" />
-        <h1 className="h1Choose">Wähle deine Laufzeit!</h1>
+        <h1 className="h1Choose">Wähle deine Laufzeit für WASA!</h1>
       </div>
       <div className="Contracts">
         <ContractCard

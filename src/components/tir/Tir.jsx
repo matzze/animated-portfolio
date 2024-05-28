@@ -7,10 +7,10 @@ import IntroductionSVG from "../../svgs/introduction";
 import ShowerSVG from "../../svgs/shower";
 import CardioSvg from "../../svgs/cardio";
 import tirMapImage from "../../../images/tirmap1.png";
-import hantelnImage from "../../../images/hanteln.jpg";
-import monatImage from "../../../images/1monat.jpg";
-import tenImage from "../../../images/10er.jpg";
-import twelveImage from "../../../images/12monate.jpg";
+import hantelnImage from "../../../images/15tir.jpg";
+import monatImage from "../../../images/12tir.jpg";
+import tenImage from "../../../images/10ertir.jpg";
+import twelveImage from "../../../images/1tir.jpg";
 import kursequerImage from "../../../images/kurse.jpg";
 import bodytirImage from "../../../images/bodytir.png";
 import qrKurse from "../../../images/qr.png"; // Hinzugefügtes QR-Code-Bild
@@ -21,7 +21,7 @@ const Tir = () => {
     <div className="tirBackground">
       <div className="tirHeader">
         <img src={bodytirImage} alt="Bodytir" className="" />
-        <h1 className="h1Choose">Wähle deine Laufzeit!</h1>
+        <h1 className="h1Choose">Wähle deine Laufzeit für TIR!</h1>
       </div>
       <div className="Contracts">
         <ContractCard
@@ -29,7 +29,7 @@ const Tir = () => {
           image={hantelnImage}
           price="19,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
-          serviceFee="• Jährlich Servicepauschale von 39,95€"
+          serviceFee="• Jährliche Servicepauschale von 39,95€"
           note="*Bei Kontoabbuchung"
         />
         <ContractCard
@@ -37,7 +37,7 @@ const Tir = () => {
           image={twelveImage}
           price="24,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
-          serviceFee="• Jährlich Servicepauschale von 39,95€"
+          serviceFee="• Jährliche Servicepauschale von 39,95€"
           note="*Bei Vorab Barzahlung"
         />
         <ContractCard
