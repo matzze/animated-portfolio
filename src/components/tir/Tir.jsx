@@ -12,15 +12,16 @@ import monatImage from "../../../images/12tir.jpg";
 import tenImage from "../../../images/10ertir.jpg";
 import twelveImage from "../../../images/1tir.jpg";
 import kursequerImage from "../../../images/kurse.jpg";
-import bodytirImage from "../../../images/bodytir.png";
-import qrKurse from "../../../images/qr.png"; // Hinzugefügtes QR-Code-Bild
+import bodytirImage from "../../../images/bodytirreha.png";
+import qrKurse from "../../../images/qr.png";
+import reha from "../../../images/reha.webp";
 import Course from "../../Course/course";
-
 const Tir = () => {
   return (
     <div className="tirBackground">
       <div className="tirHeader">
-        <img src={bodytirImage} alt="Bodytir" className="" />
+        <img src={bodytirImage} alt="Bodytir" className="bodytirImage" />
+
         <h1 className="h1Choose">Wähle deine Laufzeit für TIR!</h1>
       </div>
       <div className="Contracts">
@@ -80,7 +81,7 @@ const Tir = () => {
           <div className="icon-container">
             <div className="icon-with-text">
               <IntroductionSVG className="svg-icon" />
-              <span>Zertifizierter Rehasport Anbieter</span>
+              <span>Bester Preis der Stadt</span>
             </div>
             <div className="icon-with-text">
               <ShowerSVG className="svg-icon" />
@@ -88,11 +89,11 @@ const Tir = () => {
             </div>
             <div className="icon-with-text">
               <CardioSvg className="svg-icon" />
-              <span>Top Cardiogeräte</span>
+              <span>Top Cardio- & Kraftgeräte</span>
             </div>
             <div className="icon-with-text">
               <DrinkSVG className="svg-icon" />
-              <span>Mineralgetränke</span>
+              <span>Wasserbar + Mineralgetränke inkl.</span>
             </div>
           </div>
         </div>

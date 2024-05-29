@@ -4,7 +4,9 @@ import ContractCard from "../ContractCard/ContractCard";
 import TwentyFourHoursIcon from "../../svgs/twentyFour";
 import DrinkSVG from "../../svgs/drink";
 import IntroductionSVG from "../../svgs/introduction";
+import OutdoorSVG from "../../svgs/outdoor";
 import ShowerSVG from "../../svgs/shower";
+
 import CardioSvg from "../../svgs/cardio";
 import wasaMapImage from "../../../images/bodywasamap.png";
 import hantelnImage from "../../../images/15wasa.jpg";
@@ -78,11 +80,11 @@ const Wasa = () => {
           <div className="icon-container">
             <div className="icon-with-text">
               <IntroductionSVG className="svg-icon" />
-              <span>Fun-Outdoor-Area</span>
+              <span>24h geöffnet</span>
             </div>
             <div className="icon-with-text">
-              <ShowerSVG className="svg-icon" />
-              <span>Duschen</span>
+              <OutdoorSVG className="svg-icon" />
+              <span>Fun-Outdoor-Area</span>
             </div>
             <div className="icon-with-text">
               <CardioSvg className="svg-icon" />
@@ -90,7 +92,7 @@ const Wasa = () => {
             </div>
             <div className="icon-with-text">
               <DrinkSVG className="svg-icon" />
-              <span>Mineralgetränke</span>
+              <span>Wasserbar</span>
             </div>
           </div>
         </div>
