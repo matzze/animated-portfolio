@@ -1,12 +1,11 @@
 import React from "react";
-import "./wasa.scss"; // Importiere die umbenannte CSS-Datei
+import "./wasa.scss"; // Importiere die CSS-Datei
 import ContractCard from "../ContractCard/ContractCard";
 import TwentyFourHoursIcon from "../../svgs/twentyFour";
 import DrinkSVG from "../../svgs/drink";
 import IntroductionSVG from "../../svgs/introduction";
 import OutdoorSVG from "../../svgs/outdoor";
 import ShowerSVG from "../../svgs/shower";
-
 import CardioSvg from "../../svgs/cardio";
 import wasaMapImage from "../../../images/bodywasamap.png";
 import hantelnImage from "../../../images/15wasa.jpg";
@@ -15,6 +14,7 @@ import tenImage from "../../../images/10erwasa.jpg";
 import twelveImage from "../../../images/12wasa.jpg";
 import kursequerImage from "../../../images/kurse.jpg";
 import bodywasaImage from "../../../images/bodywasa.png";
+import twentyfour from "../../../images/24h.png";
 import qrKurse from "../../../images/qr.png"; // Hinzugefügtes QR-Code-Bild
 import Course from "../../Course/course";
 
@@ -23,7 +23,7 @@ const Wasa = () => {
     <div className="wasaBackground">
       <div className="wasaHeader">
         <img src={bodywasaImage} alt="Bodytir" className="" />
-        <h1 className="h1Choose">Wähle deine Laufzeit für WASA!</h1>
+        <h1 className="h1Choose"></h1>
       </div>
       <div className="Contracts">
         <ContractCard
@@ -62,6 +62,7 @@ const Wasa = () => {
       <div className="InfoContainer">
         <div className="InfoItem">
           <h2 className="InfoHeader">Öffnungszeiten</h2>
+          <img src={twentyfour} alt="24h geöffnet" className="twentyfour-img" />
           <p className="opening-hours-info">
             Montag bis Sonntag <strong>0-24 Uhr</strong>
           </p>
@@ -80,7 +81,7 @@ const Wasa = () => {
           <div className="icon-container">
             <div className="icon-with-text">
               <IntroductionSVG className="svg-icon" />
-              <span>24h geöffnet</span>
+              <span>Bester Preis der Stadt</span>
             </div>
             <div className="icon-with-text">
               <OutdoorSVG className="svg-icon" />
@@ -88,7 +89,7 @@ const Wasa = () => {
             </div>
             <div className="icon-with-text">
               <CardioSvg className="svg-icon" />
-              <span>Top Cardiogeräte</span>
+              <span>Top Cardio- & Kraftgeräte</span>
             </div>
             <div className="icon-with-text">
               <DrinkSVG className="svg-icon" />

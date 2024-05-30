@@ -22,7 +22,7 @@ const Tir = () => {
       <div className="tirHeader">
         <img src={bodytirImage} alt="Bodytir" className="bodytirImage" />
 
-        <h1 className="h1Choose">Wähle deine Laufzeit für TIR!</h1>
+        <h1 className="h1Choose"></h1>
       </div>
       <div className="Contracts">
         <ContractCard

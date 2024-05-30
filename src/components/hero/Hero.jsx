@@ -10,7 +10,7 @@ const Hero = () => {
       </div>
 
       <div className="H1Container">
-        <h1 className="h1">Wähle dein Fitnessstudio!</h1>
+        <h1 className="h1"></h1>
       </div>
 
       <div className="image-card">
@@ -20,13 +20,9 @@ const Hero = () => {
           description=""
         />
 
+        <ImageCard src="./images/woman.jpg" title="Waldsassen" description="" />
         <ImageCard
-          src="./images/girljpg.jpg"
-          title="Waldsassen"
-          description=""
-        />
-        <ImageCard
-          src="./images/muscular.jpg"
+          src="./images/typred.jpg"
           title="STUDIO NEU"
           description="Bald verfügbar!"
         />
