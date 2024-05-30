@@ -1,0 +1,24 @@
+.impressum-container {
+    padding: 20px;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .important-info,
+    .publisher-info,
+    .disclaimer {
+      margin-bottom: 20px;
+  
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  
+    .important-info a {
+      color: red;
+      text-decoration: underline;
+    }
+  }
+  
