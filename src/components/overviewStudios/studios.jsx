@@ -2,7 +2,7 @@ import React from "react";
 import "./studios.scss";
 import picTir from "../../../images/hanteln.jpg";
 import picWasa from "../../../images/1monat.jpg";
-import picNewStudio from "../../../images/10er.jpg";
+import picNewStudio from "../../../images/studioneu.png";
 
 const Studios = () => {
   return (
@@ -13,23 +13,45 @@ const Studios = () => {
           <img src={picWasa} alt="Bild1" />
           <h2>Studio Waldsassen</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-            inventore veritatis et quasi architecto beatae vitae dicta sunt
-            explicabo.
+            <p>
+              <strong>Fun-Outdoor-Area:</strong> Genießen Sie das Training an
+              der frischen Luft in unserer modernen Fun-Outdoor-Area. Ob Cardio,
+              Krafttraining oder funktionelles Training - hier finden Sie
+              vielfältige Möglichkeiten, Ihr Workout abwechslungsreich zu
+              gestalten.
+            </p>
+            <p>
+              <strong>Ausreichend Parkplätze:</strong> Kein Stress bei der
+              Parkplatzsuche! Unser Fitnessstudio verfügt über zahlreiche
+              Parkplätze direkt vor der Tür. So können Sie entspannt ankommen
+              und sich voll und ganz auf Ihr Training konzentrieren.
+            </p>
+            <p>
+              <strong>24 Stunden geöffnet:</strong> Flexibilität wird bei uns
+              großgeschrieben. Unser Fitnessstudio ist rund um die Uhr geöffnet,
+              damit Sie jederzeit trainieren können - egal ob früh morgens, spät
+              abends oder mitten in der Nacht.
+            </p>
           </p>
         </div>
 
         {/* Zweite Spalte */}
         <div className="column">
           <h2>Studio Tirschenreuth</h2>
+
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            <strong>Solarium:</strong> Gönnen Sie sich nach dem Training eine
+            entspannende Auszeit in unserem Solarium. Bitte beachten Sie, dass
+            die Nutzung des Solariums gegen eine zusätzliche Gebühr erfolgt.
           </p>
+
+          <p>
+            <strong>Vibraplate inklusive:</strong> Nutzen Sie unsere moderne
+            Vibraplate, um Ihr Training zu intensivieren. Die Nutzung der
+            Vibraplate ist für unsere Mitglieder kostenlos und jederzeit
+            verfügbar.
+          </p>
+
           <video autoPlay muted loop>
             <source src="../../../videos/GymBodyStyle.MP4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -41,11 +63,9 @@ const Studios = () => {
           <img src={picNewStudio} alt="Bild3" />
           <h2>Neues Studio</h2>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati cupiditate non
-            provident, similique sunt in culpa qui officia deserunt mollitia
-            animi, id est laborum et dolorum fuga.
+            Wir freuen uns, Ihnen bald unser brandneues Fitnessstudio
+            präsentieren zu können. Bleiben Sie gespannt - weitere Informationen
+            folgen in Kürze!
           </p>
         </div>
       </div>

@@ -47,8 +47,8 @@ const Wasa = () => {
           image={monatImage}
           price="44,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
-          serviceFee=" "
           note=""
+          serviceFee="Wird monatlich abgebucht"
         />
         <ContractCard
           title="10er- Karte"

@@ -46,7 +46,7 @@ const Tir = () => {
           image={monatImage}
           price="44,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
-          serviceFee=" "
+          serviceFee="Wird monatlich abgebucht"
           note=""
         />
         <ContractCard
