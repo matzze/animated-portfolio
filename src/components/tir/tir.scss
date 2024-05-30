@@ -4,11 +4,10 @@
   z-index: 0; /* Standard-Z-Index, damit sich andere Elemente darüber befinden */
 }
 
-/* Rest deines CSS-Codes bleibt unverändert */
 .tirHeader {
   display: flex;
-  
 }
+
 .tirHeader img {
   width: 310px; /* Breite des Bildes */
   height: auto; /* Automatische Anpassung der Höhe, um das Seitenverhältnis beizubehalten */
@@ -25,7 +24,6 @@
 
 .h1Choose {
   padding-top: 40px;
- 
   font-size: 60px;
 }
 
@@ -39,7 +37,6 @@
 
 .Contracts {
   display: flex;
-  
   justify-content: center;
   margin-top: 20px;
 }
@@ -56,7 +53,7 @@
   margin-bottom: 20px;
 }
 
-.InfoItem img {
+.tirInfoImage {
   max-width: 350px; /* Das Bild wird auf die maximale Breite des Containers beschränkt */
   height: 350px; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
   border-radius: 10px; /* Abgerundete Ecken für das Bild */
@@ -88,69 +85,52 @@
   border-radius: 5px; /* Abgerundete Ecken für die rote Box */
 }
 
-
 .InfoItem.opening-hours {
   padding-left: 30px; /* Zusätzlicher Abstand von der linken Seite */
 }
+
 .opening-hours-info {
   margin-left: 30px; /* Abstand von links für die p-Tags der Öffnungszeiten */
   padding: 10px;
   font-size: 30px;
-   /* Macht die Uhrzeiten fett */
 }
+
 .opening-hours-info strong {
   font-weight: bold; /* Macht den Text innerhalb von <strong> fett */
 }
-
 
 .opening-hours-info.betreuungszeiten {
   text-decoration: underline; /* Unterstreicht die Betreuungszeiten */
 }
 
-
-.h1Tir {
-  padding-top: 40px;
-  margin-left: 40px;
-  font-size: 50px;
+.map-hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.h1Choose {
-  padding-top: 40px;
- 
-  font-size: 60px;
-}
-
-.InfoContainer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.Contracts {
-  display: flex;
-  
-  justify-content: center;
-  margin-top: 20px;
-}
-
-
-.InfoVideo video {
-  width: 300px;
-  height: 440px;
-  object-fit: cover;
+.map-image {
+  position: relative;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
-  margin-right: 30px;
+  cursor: pointer; /* Cursor zum Pointer ändern */
 }
 
-.InfoItem {
-  margin-bottom: 20px;
+.map-image:hover {
+  opacity: 0.8; /* Ändert die Opazität, wenn über das Bild gehovert wird */
 }
+
 .icon-container {
-
   margin-left: 50px; /* Hier kannst du den gewünschten Abstand einstellen */
 }
 
-.InfoItem img {
+.tirInfoImage {
   max-width: 330px; /* Das Bild wird auf die maximale Breite des Containers beschränkt */
   height: 300px; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis beizubehalten */
   border-radius: 10px; /* Abgerundete Ecken für das Bild */
@@ -172,50 +152,3 @@
   margin-left: 10px; /* Abstand zwischen Icon und Text */
   font-size: 20px; /* Hier kannst du die gewünschte Schriftgröße einstellen */
 }
-
-
-.InfoHeader {
-  font-size: 30px; /* Größe der Überschriften */
-  font-weight: bold; /* Fettformatierung der Überschriften */
-  margin-bottom: 20px; /* Abstand unter den Überschriften */
-  margin-left: 30px;
-  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe der roten Box */
-  color: white; /* Textfarbe auf weiß setzen, um den Kontrast zu verbessern */
-  padding: 10px 20px; /* Innenabstand für den Text */
-  border-radius: 5px; /* Abgerundete Ecken für die rote Box */
-}
-
-
-.InfoItem.opening-hours {
-  padding-left: 30px; /* Zusätzlicher Abstand von der linken Seite */
-}
-.opening-hours-info {
-  margin-left: 30px; /* Abstand von links für die p-Tags der Öffnungszeiten */
-  padding: 10px;
-  font-size: 30px;
-}
-.map-hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-
-.map-image {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  cursor: pointer; /* Cursor zum Pointer ändern */
-}
-
-.map-image:hover {
-  opacity: 0.8; /* Ändert die Opazität, wenn über das Bild gehovert wird */
-}
-
-

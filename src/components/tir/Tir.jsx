@@ -16,12 +16,12 @@ import bodytirImage from "../../../images/bodytirreha.png";
 import qrKurse from "../../../images/qr.png";
 import reha from "../../../images/reha.webp";
 import Course from "../../Course/course";
+
 const Tir = () => {
   return (
     <div className="tirBackground">
       <div className="tirHeader">
         <img src={bodytirImage} alt="Bodytir" className="bodytirImage" />
-
         <h1 className="h1Choose"></h1>
       </div>
       <div className="Contracts">
@@ -107,7 +107,7 @@ const Tir = () => {
             <img
               src={tirMapImage}
               alt="Tirschenreuth Map"
-              className="map-image"
+              className="tirInfoImage"
             />
           </a>
         </div>
