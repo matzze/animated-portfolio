@@ -13,7 +13,7 @@
 .column {
   width: 30%; /* Breite der Spalten */
   margin-top: 20px; /* Abstand nach oben */
-  text-align: center; /* Text zentrieren */
+  text-align: left; /* Text linksbündig ausrichten */
 }
 
 .column img,
@@ -25,8 +25,13 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Dropshadow */
 }
 
+.video-container {
+  display: flex; /* Flexbox verwenden, um das Video zu zentrieren */
+  justify-content: center; /* Zentriert das Video horizontal */
+}
+
 .column video {
-  width: 63%; /* Breite des Videos auf 80% der Spalte */
+  width: 63%; /* Breite des Videos auf 63% der Spalte */
   height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
 }
 
@@ -43,4 +48,28 @@
 
 .column p {
   margin-bottom: 10px; /* Mehr Abstand zwischen Text und Bild/Video */
+}
+
+.column p strong {
+  font-size: 1.2em; /* Vergrößerung der Schriftgröße des strong-Elements */
+  color: #d2232a; /* Textfarbe auf Rot setzen */
+}
+
+.golden-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: #d4af37; /* Goldene Farbe */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px; /* Abstand nach oben */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Dropshadow */
+}
+
+.golden-button:hover {
+  background-color: #c69735; /* Dunkleres Gold bei Hover */
 }

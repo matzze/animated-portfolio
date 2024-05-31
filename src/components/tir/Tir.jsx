@@ -28,7 +28,7 @@ const Tir = () => {
         <ContractCard
           title="15 Monate"
           image={hantelnImage}
-          price="19,90€*"
+          price="24,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
           serviceFee="• Jährliche Servicepauschale von 39,95€"
           note="*Bei Kontoabbuchung"
@@ -36,7 +36,7 @@ const Tir = () => {
         <ContractCard
           title="12 Monate"
           image={twelveImage}
-          price="24,90€*"
+          price="19,90€*"
           activationFee="• Einmalig 20€ Chipaktivierung"
           serviceFee="• Jährliche Servicepauschale von 39,95€"
           note="*Bei Vorab Barzahlung"

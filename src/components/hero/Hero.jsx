@@ -17,26 +17,22 @@ const Hero = () => {
         {/* Verwende href für die Navigation zu den verschiedenen Abschnitten */}
         <a href="#tir">
           <ImageCard
-            src="./images/typ.jpg"
+            src="./images/sw.jpg"
             title="Tirschenreuth"
-            description=""
-          />
-        </a>
-
-        <a href="#wasa">
-          <ImageCard
-            src="./images/woman.jpg"
-            title="Waldsassen"
             description=""
           />
         </a>
 
         <a href="#studios">
           <ImageCard
-            src="./images/typred.jpg"
+            src="./images/woman.jpg"
             title="STUDIO NEU"
-            description="Bald verfügbar!"
+            description=""
           />
+        </a>
+
+        <a href="#wasa">
+          <ImageCard src="./images/sw6.jpg" title="Waldsassen" description="" />
         </a>
       </div>
     </div>
