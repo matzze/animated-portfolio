@@ -10,14 +10,14 @@
   justify-content: space-between;
 }
 
-.column {
+/* Neue spezifische Stile für die erste Spalte */
+.waldsassen-column {
   width: 30%; /* Breite der Spalten */
   margin-top: 20px; /* Abstand nach oben */
   text-align: left; /* Text linksbündig ausrichten */
 }
 
-.column img,
-.column video {
+.waldsassen-column img {
   width: 100%; /* Bild oder Video auf volle Breite der Spalte */
   height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
   margin-bottom: 30px; /* Mehr Abstand zwischen Bild/Video und Text */
@@ -25,17 +25,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Dropshadow */
 }
 
-.video-container {
-  display: flex; /* Flexbox verwenden, um das Video zu zentrieren */
-  justify-content: center; /* Zentriert das Video horizontal */
-}
-
-.column video {
-  width: 63%; /* Breite des Videos auf 63% der Spalte */
-  height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
-}
-
-.column h2 {
+.waldsassen-h2 {
   margin-top: 10px; /* Abstand zwischen Überschrift und Inhalt */
   margin-bottom: 20px; /* Mehr Abstand zwischen Überschrift und Text */
   font-size: 30px; /* Größe der Überschriften */
@@ -46,19 +36,92 @@
   border-radius: 5px; /* Abgerundete Ecken für die rote Box */
 }
 
-.column p {
+.waldsassen-p {
   margin-bottom: 10px; /* Mehr Abstand zwischen Text und Bild/Video */
+  color: white; /* Textfarbe auf weiß setzen */
 }
 
-.column p strong {
+.waldsassen-p strong {
   font-size: 1.2em; /* Vergrößerung der Schriftgröße des strong-Elements */
   color: #d2232a; /* Textfarbe auf Rot setzen */
 }
 
-.golden-button {
+/* Neue spezifische Stile für die zweite Spalte */
+.tirschenreuth-column {
+  width: 30%; /* Breite der Spalten */
+  margin-top: 20px; /* Abstand nach oben */
+  text-align: left; /* Text linksbündig ausrichten */
+}
+
+.tirschenreuth-column video {
+  width: 65%; /* Video auf volle Breite der Spalte */
+  height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
+  margin-bottom: 30px; /* Mehr Abstand zwischen Video und Text */
+  border-radius: 10px; /* Abgerundete Ecken */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Dropshadow */
+}
+
+.tirschenreuth-h2 {
+  margin-top: 10px; /* Abstand zwischen Überschrift und Inhalt */
+  margin-bottom: 20px; /* Mehr Abstand zwischen Überschrift und Text */
+  font-size: 30px; /* Größe der Überschriften */
+  font-weight: bold; /* Fettformatierung der Überschriften */
+  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe der roten Box */
+  color: white; /* Textfarbe auf weiß setzen, um den Kontrast zu verbessern */
+  padding: 10px 20px; /* Innenabstand für den Text */
+  border-radius: 5px; /* Abgerundete Ecken für die rote Box */
+}
+
+.tirschenreuth-p {
+  margin-bottom: 10px; /* Mehr Abstand zwischen Text und Video */
+  color: white; /* Textfarbe auf weiß setzen */
+}
+
+.tirschenreuth-p strong {
+  font-size: 1.2em; /* Vergrößerung der Schriftgröße des strong-Elements */
+  color: #d2232a; /* Textfarbe auf Rot setzen */
+}
+
+.tirschenreuth-video-container {
+  display: flex; /* Flexbox verwenden, um das Video zu zentrieren */
+  justify-content: center; /* Zentriert das Video horizontal */
+}
+
+/* Neue spezifische Stile für die dritte Spalte */
+.new-studio-column {
+  width: 30%; /* Breite der Spalten */
+  margin-top: 20px; /* Abstand nach oben */
+  text-align: left; /* Text linksbündig ausrichten */
+}
+
+.new-studio-column img {
+  width: 100%; /* Bild oder Video auf volle Breite der Spalte */
+  height: auto; /* Automatische Höhe, um das Seitenverhältnis beizubehalten */
+  margin-bottom: 30px; /* Mehr Abstand zwischen Bild/Video und Text */
+  border-radius: 10px; /* Abgerundete Ecken */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Dropshadow */
+}
+
+.new-studio-h2 {
+  margin-top: 10px; /* Abstand zwischen Überschrift und Inhalt */
+  margin-bottom: 20px; /* Mehr Abstand zwischen Überschrift und Text */
+  font-size: 30px; /* Größe der Überschriften */
+  font-weight: bold; /* Fettformatierung der Überschriften */
+  background-color: rgba(210, 34, 42, 0.8); /* Hintergrundfarbe der roten Box */
+  color: white; /* Textfarbe auf weiß setzen, um den Kontrast zu verbessern */
+  padding: 10px 20px; /* Innenabstand für den Text */
+  border-radius: 5px; /* Abgerundete Ecken für die rote Box */
+}
+
+.new-studio-p {
+  margin-bottom: 10px; /* Mehr Abstand zwischen Text und Bild/Video */
+  color: white; /* Textfarbe auf weiß setzen */
+}
+
+.new-studio-button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 40px; /* Vergrößert die Größe des Buttons */
+  font-size: 20px; /* Vergrößert die Schriftgröße im Button */
   color: black;
   background-color: #d4af37; /* Goldene Farbe */
   border: none;
@@ -70,6 +133,6 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Schwarzer Dropshadow */
 }
 
-.golden-button:hover {
+.new-studio-button:hover {
   background-color: #c69735; /* Dunkleres Gold bei Hover */
 }
