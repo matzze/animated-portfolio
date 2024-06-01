@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./studios.scss";
 import picTir from "../../../images/hanteln.jpg";
 import picWasa from "../../../images/1monat.jpg";
 import picNewStudio from "../../../images/studioneu.png";
+import whatsappQR from "../../../images/whatsappQR.png";
+import ArrowSVG from "../../svgs/arrow";
 
 const Studios = () => {
+  const [showQR, setShowQR] = useState(false);
+
+  const toggleQR = () => {
+    setShowQR(!showQR);
+  };
+
   return (
     <div className="studios-outer-container">
       <div className="studios-inner-container">
@@ -64,9 +72,16 @@ const Studios = () => {
             präsentieren zu können. Bleiben Sie gespannt - weitere Informationen
             folgen in Kürze!
           </p>
-          <button className="new-studio-button">
-            Jetzt Probetraining vereinbaren
+          <button className="new-studio-button" onClick={toggleQR}>
+            <span>Jetzt Probetraining vereinbaren</span>
           </button>
+          <div className={`whatsappContainer ${showQR ? "showQR" : ""}`}>
+            <img
+              src={whatsappQR}
+              alt="WhatsApp QR Code"
+              className="whatsappQR"
+            />
+          </div>
         </div>
       </div>
     </div>
